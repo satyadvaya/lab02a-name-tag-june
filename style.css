@@ -1,0 +1,33 @@
+.name-tag {
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.top, 
+.bottom {
+    background-color: red;
+    width: 100%;
+}
+h1, 
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+.bottom {
+    height: 35px;
+    border-radius: 0px 0px 10px 10px;
+}
+.middle {
+    font-family: cursive;
+    font-size: 2rem;
+    background-color: white;
+}
+.top {
+    border-radius: 10px 10px 0px 0px;
+}
