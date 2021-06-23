@@ -1,6 +1,11 @@
 :root {
     --main-border-radius: 20px;
 }
+
+body {
+    background-color: lightblue;
+}
+
 .name-tag {
     height: 280px;
     width: 400px;
@@ -8,30 +13,46 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    border-radius: var(--main-border-radius);
     background-color: white;
 }
-.top, 
-.bottom {
+
+.top-section,
+.bottom-section {
     background-color: red;
     width: 100%;
 }
-h1, 
+
+.top-section {
+    border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
+}
+
+.middle-section {
+    font-family: cursive;
+    font-size: 3rem;
+    background-color: white;
+}
+
+.bottom-section {
+    height: 35px;
+    border-radius: 0px 0px var(--main-border-radius) var(--main-border-radius);
+}
+
+h1,
 h2 {
     text-align: center;
     color: white;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+}
 
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
 }
-.bottom {
-    height: 35px;
-    border-radius: 0px 0px var(--main-border-radius) 20px var((--main-border-radius) 20px 
-.middle {
-    font-family: cursive;
+
+h2 {
     font-size: 2rem;
-    background-color: white;
-}
-.top {
-    border-radius: var(--main-border-radius) 20px var((--main-border-radius) 20px 0px 0px;
+    font-weight: lighter;
 }
