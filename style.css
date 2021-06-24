@@ -3,12 +3,12 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(145, 124, 220);
 }
 
-.name-tag {
+.nametag {
     height: 280px;
-    width: 400px;
+    width: 475px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,23 +17,23 @@ body {
     background-color: white;
 }
 
-.top-section,
-.bottom-section {
+.top,
+.bottom {
     background-color: red;
     width: 100%;
 }
 
-.top-section {
+.top {
     border-radius: var(--main-border-radius) var(--main-border-radius) 0px 0px;
 }
 
-.middle-section {
+.name {
     font-family: cursive;
     font-size: 3rem;
     background-color: white;
 }
 
-.bottom-section {
+.bottom {
     height: 35px;
     border-radius: 0px 0px var(--main-border-radius) var(--main-border-radius);
 }
@@ -55,4 +55,16 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: lighter;
+}
+
+#pink-button {
+    background-color: pink;
+}
+
+#lightgreen-button {
+    background-color: lightgreen;
+}
+
+#lightblue-button {
+    background-color: lightblue;
 }

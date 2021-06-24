@@ -1,47 +1,28 @@
-console.log("hello world!")
-
-const nameTag = document.getElementById('name-tag');
-console.log(nameTag)
-
 const nameSection = document.getElementById('name-section');
-nameSection.addEventListener('click', () => {
-    console.log("i am clicking this thing")
-    console.log(Math.random());
-    nameSection.innerText = "Benny";
-})
-
 const nameInput = document.getElementById('name-input');
-// nameInput.addEventListener('input', (event) => {
-//     console.log(event.target.value);
-//     nameSection.innerText = event.target.value;
-// })
+const nameButton = document.getElementById('name-button');
 
-const submitButton = document.getElementById('submit');
-submitButton.addEventListener('click', (e) => {
-    nameSection.innerText = nameInput.value;
-})
+nameButton.addEventListener('click', () => {
+    nameSection.textContent = nameInput.value;
+});
 
 const topSection = document.getElementById('top-section');
-topSection.style.backgroundColor = "purple";
-
 const bottomSection = document.getElementById('bottom-section');
-bottomSection.style.backgroundColor = "purple";
+const pinkButton = document.getElementById('pink-button');
+const lightgreenButton = document.getElementById('lightgreen-button');
+const lightblueButton = document.getElementById('lightblue-button');
 
-function shout(word) {
-    console.log(word.toUpperCase());
-}
-shout('ohboy');
+pinkButton.addEventListener('click', () => {
+    topSection.style.background = "pink";
+    bottomSection.style.background = "pink";
+});
 
-// same as below ...
+lightgreenButton.addEventListener('click', () => {
+    topSection.style.background = "lightgreen";
+    bottomSection.style.background = "lightgreen";
+});
 
-const shoutAgain = function(word) {
-    console.log(word.toUpperCase());
-}
-shoutAgain('here we go again')
-
-// same as below ...
-
-// const shoutAgain = function(word) {
-//     console.log(word.toUpperCase());
-// }
-// shoutAgain('here we go again')
+lightblueButton.addEventListener('click', () => {
+    topSection.style.background = "lightblue";
+    bottomSection.style.background = "lightblue";
+});
